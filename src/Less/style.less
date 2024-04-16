@@ -1,0 +1,287 @@
+// compress: true
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 100px; 
+
+    transition: all 0.5s ease;
+}
+
+.btn-outline-success {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    background-color: var(--bs-gray-900);
+
+    padding:5px 25px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+
+.popup-items {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    gap: 15px;
+    width: 300px; 
+    padding: 10px;
+    z-index: 1;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.popup-items span {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+
+    color:rgba(41, 41, 45, 1);
+}
+
+
+.nav-item:hover .popup-items,
+.nav-item:focus-within .popup-items  {
+    display: flex; 
+}
+
+.popup-items span:hover {
+    color: var(--bs-red);
+}
+
+
+.form-control {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    padding-left: 30px;
+
+    box-shadow: 5px 2px 30px 0px rgba(41, 41, 45, 0.1) inset;
+    border: none;
+}
+
+.form-control:hover {
+    box-shadow: 5px 2px 30px 0px rgba(41, 41, 45, 0.1) inset;
+}
+
+.form-control:focus {
+    box-shadow: 5px 2px 30px 0px rgba(41, 41, 45, 0.1) inset;
+    border-color: var(--bs-gray);
+}
+
+.navbar-toggler {
+    padding: 5px;
+    background-color: var(--bs-red);
+    color: #fff;
+
+    border-top-right-radius: 50px;
+    border-bottom-right-radius:50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
+}
+
+.nav-link {
+    color: var(--bs-primary-text-emphasis);
+    font-weight: 700;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.nav-link:hover {
+    color: var(--bs-red)
+}
+
+
+.wrapper_icon--decstop {
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    
+
+    gap: 20px;
+}
+
+
+
+.header_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: var(--bs-gray-900);
+}
+
+.button_basket {
+    position: relative;
+}
+
+.button_basket--activ {
+    position: absolute;
+    font-size: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: -10px;
+    right: -10px;
+    color: #fff;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: var(--bs-red);
+}
+
+.container {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+
+.header__communication {
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: start;
+}
+
+.header__nav-list {
+    padding: 0;
+    list-style: none;
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.header__nav-list a {
+    display: flex;
+    align-items: end;
+
+    gap: 10px;
+
+    text-decoration: none; 
+    color:var(--bs-primary-text-emphasis);
+
+
+
+    font-weight: 700;
+}
+
+.header__nav-list span {
+    margin-bottom: -2px;
+}
+
+.header__nav-list span:hover {
+    color: var(--bs-red);
+    transition: 0.5s;
+}
+
+.header_button:hover{
+    background-color: var(--bs-red);
+    transition: 0.5s;
+}
+
+.carousel-item.active{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+} 
+
+main {
+    padding: 0 100px; 
+}
+
+#banner {
+    padding-top: 75px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: none;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carousel-control-next {
+    right: -100px;
+}
+
+.btn_card {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.card-title {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 900;
+
+    color: rgba(0, 44, 106, 1);
+}
+
+.btn_card {
+    background-color: var(--bs-red);
+    border: none;
+    padding: 24px 53px;
+    box-shadow: 0px 15px 30px 0px rgba(227, 47, 31, 0.15);
+
+    border-radius: 50px;
+
+    align-self: start;
+}
+
+.card-text {
+    font-family: Ruda;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+
+    color: rgba(41, 41, 45, 1);
+}
+
+.banner_img-mobill {
+    display: none;
+}
+
+.navbar-toggler.nav-link {
+    margin-left: 10px;
+}
