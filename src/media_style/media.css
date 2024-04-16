@@ -9,6 +9,39 @@
 }
 
 @media (max-width: 992px) {
+
+    
+
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+    }
+
+    .container .col:nth-child(1) {
+        /* max-width: 50%; */
+    }
+
+    .container .col:nth-child(3) {
+
+         position: absolute;  
+         display: flex;
+         top: 180px;
+         justify-content: center;
+         right: 0;
+         left: 0;
+    }
+
+    .row {
+        display: flex;
+        /* gap: 120px; */
+    }
+
+    .row .col:nth-child(2) {
+        display: flex;
+        justify-content: start;
+    }
+
     
     .navbar-collapse.collapse.show {
         position: static;
