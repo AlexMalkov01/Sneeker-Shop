@@ -20,6 +20,37 @@ header {
     padding:5px 25px;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
+
+
+.popup-items {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    gap: 15px;
+    width: 300px; 
+    padding: 10px;
+    z-index: 1;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+.nav-item:hover .popup-items,
+.nav-item:focus-within .popup-items  {
+    display: flex; 
+}
+
+.popup-items span:hover {
+    color: var(--bs-red);
+}
+
+
 .form-control {
     border-top-right-radius:0;
     border-bottom-right-radius:0;
@@ -42,8 +73,14 @@ header {
 }
 
 .navbar-toggler {
+    padding: 5px;
     background-color: var(--bs-red);
     color: #fff;
+
+    border-top-right-radius: 50px;
+    border-bottom-right-radius:50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
 }
 
 .nav-link {
