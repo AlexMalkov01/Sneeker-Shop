@@ -40,6 +40,14 @@ header {
     cursor: pointer;
 }
 
+.popup-items span {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+
+    color:rgba(41, 41, 45, 1);
+}
+
 
 .nav-item:hover .popup-items,
 .nav-item:focus-within .popup-items  {
@@ -86,6 +94,11 @@ header {
 .nav-link {
     color: var(--bs-primary-text-emphasis);
     font-weight: 700;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+
 }
 
 .nav-link:hover {
@@ -266,4 +279,8 @@ main {
 
 .banner_img-mobill {
     display: none;
+}
+
+.navbar-toggler.nav-link {
+    margin-left: 10px;
 }

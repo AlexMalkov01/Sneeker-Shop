@@ -9,6 +9,20 @@
 }
 
 @media (max-width: 992px) {
+    .navbar-collapse.collapse.show {
+        position: static;
+
+        margin-top: 10px;
+        z-index: 2;
+        padding-left: 10px;
+        margin-right: 50%;
+
+        border-top-right-radius:20px;
+        border-bottom-right-radius:20px;
+    
+        box-shadow: 5px 10px 30px 0px rgba(22, 92, 191, 0.1);
+    }
+
     .form-control {
         display: none;
     }
@@ -24,13 +38,7 @@
         font-size: 3vw;
     }
 
-    .banner_img-dekstop {
-        display: none;
-    }
-
-    .banner_img-mobill {
-        display: block;
-    }
+    
 
     .btn_card {
         font-size: 3vw;
@@ -76,8 +84,14 @@
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 820px) {
+    .banner_img-dekstop {
+        display: none;
+    }
 
+    .banner_img-mobill {
+        display: block;
+    }
 }
 
 @media (min-width: 576px) {
