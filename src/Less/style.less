@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+body {
+
+}
+
 header {
     padding: 0 100px; 
 
@@ -311,8 +315,9 @@ main {
 }
 
 .vrapper_search--mobil {
+
+   display: none;
    position: absolute;
-   display: flex;
    top: 70px;
    right: -1000px;
    max-width: 50%;
@@ -326,6 +331,7 @@ main {
 }
 
 .search_btn:focus-within .vrapper_search--mobil  {
+    display: flex;
     right: 0;
 }
 
