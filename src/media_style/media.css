@@ -136,5 +136,8 @@
 }
 
 @media (min-width: 576px) {
-
+    .search_btn:hover .vrapper_search--mobil {
+        display: flex;
+        right: 0;
+    }
 }
