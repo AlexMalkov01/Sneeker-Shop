@@ -316,14 +316,14 @@ main {
 
 .vrapper_search--mobil {
 
-   display: none;
    position: absolute;
    top: 70px;
-   right: -1000px;
+   margin-right: 10000px;
+   right: 0px;
    max-width: 50%;
    padding: 10px 5px 15px 5px;
 
-   border-radius: 12px ;
+   border-radius: 12px;
 
    box-shadow: 5px 10px 30px 0px rgba(22, 92, 191, 0.1);
 
@@ -332,9 +332,15 @@ main {
 
 .search_btn:focus-within .vrapper_search--mobil  {
     display: flex;
+    margin: 0;
     right: 0;
 }
 
+.search_btn:focus + .vrapper_search--mobil {
+    display: flex;
+    margin: 0;
+    right: 0;
+}
 
 .input_search--mobil {
     max-width: 68%;
