@@ -1,11 +1,17 @@
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
     .container,container-sm {
         max-width: 100%;
     } 
+
+    .banner_img-dekstop {
+        margin-right: -250px;
+    }
 }
 
-@media (min-width: 1200px) {
-
+@media (max-width: 1200px) {
+    .banner_img-dekstop {
+        margin-right: -450px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -22,9 +28,9 @@
 
     .container .col:nth-child(3) {
 
-         position: relative;  
+         position: absolute;  
          display: flex;
-         top: 80px;
+         top: 185px;
          justify-content: center;
          right: 0;
          left: 0;
@@ -36,12 +42,11 @@
 
     .row {
         display: flex;
-        /* gap: 120px; */
     }
 
     .row .col:nth-child(2) {
         display: flex;
-        justify-content: start;
+        justify-content: end;
     }
 
     
