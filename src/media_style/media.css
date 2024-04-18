@@ -133,6 +133,12 @@
     .banner_img-mobill {
         display: block;
     }
+
+    .search_btn:hover .vrapper_search--mobil {
+        display: flex;
+        margin: 0;
+        right: 0;
+    }
 }
 
 @media (min-width: 576px) {
