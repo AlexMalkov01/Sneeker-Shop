@@ -285,8 +285,7 @@
 
     .search_btn:focus-within + .vrapper_search--mobil,
     .vrapper_search--mobil:focus-within ,
-    .btn_search--mobil:focus-within ,
-    .btn_search--mobil:hover {
+    .vrapper_search--mobil:hover {
         top: 60px;
         display: flex;
         margin: 0;
