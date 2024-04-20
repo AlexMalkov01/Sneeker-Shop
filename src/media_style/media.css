@@ -280,6 +280,19 @@
         display: flex;
         margin: 0;
         right: 22px;
+    } 
+
+    .search_btn:focus-within + .vrapper_search--mobil,
+    .vrapper_search--mobil:focus-within ,
+    .btn_search--mobil:focus-within {
+        top: 60px;
+        display: flex;
+        right: 22px;
+    }
+
+    .carousel-control-next {
+        top: 35%;
+        height: 50px;
     }
 
     .carousel-indicators {
