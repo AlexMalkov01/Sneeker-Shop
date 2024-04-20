@@ -6,6 +6,10 @@
     .banner_img-dekstop {
         margin-right: -250px;
     }
+
+    #carusel .carousel-item.active {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -16,7 +20,110 @@
 
 @media (max-width: 992px) {
 
+    .carousel-item.active {
+        gap: 0;
+    }
+
+    .carousel-item.active a{
+        display: none;
+    }
+
+    #banner {
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+
+    .wrapper-footer-dekstop {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    #carusel {
+        padding: 25px 20px 0 20px;
+    }
+
+    #carusel .carousel-control-next {
+       display: none;
+    }
+
+    #carusel .carousel-item.active {
+        padding:10px 0 10px 0;
+        gap: 10px;
+    }
+
+    #carusel .carousel-item.active .card:nth-child(3) {
+        display: none;
+    }
+
+    #blog {
+        margin-top: 30px;
+        padding: 0;
+    } 
+
+    footer {
+        padding: 0;
+    }
+
+    .wrapper_card {
+        padding-right: 20px;
+    }
+
+    .blog_card {
+        width: 70%;
+    }
+
+    .blog_card:hover {
+        width: 80%;
+    }
+
+    .blog_card:hover .blog_card--img {
+        width: 120.06px;
+        height: 124.67px;
+    }
+
+    .wrapper-blog--flex {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .blog_card--img {
+        width: 120.06px;
+        height: 124.67px;
+    }
+
+    .card_title h5 {
+        color: rgb(0, 44, 106);
+        font-family: Montserrat;
+        font-size: 10.78px;
+        font-weight: 900;
+        line-height: 13px;
+        text-transform: uppercase;
+    }
     
+    .card_title p {
+        color: rgb(41, 41, 45);
+        font-family: Ruda;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 11px;
+    }
+    
+    .card_title span {
+        color: rgb(179, 192, 210);
+        font-family: Ruda;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10px;
+    }
+
+    .mobil_footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 
     .container {
         margin-left: 0;
@@ -24,20 +131,32 @@
         width: 100vw;
     }
 
-    
+    .nav-link {
+        color: rgb(25, 25, 25);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+    }
 
     .container .col:nth-child(3) {
-
          position: absolute;  
          display: flex;
          top: 185px;
          justify-content: center;
+         gap: 5px;
          right: 0;
          left: 0;
     }
 
+    .wrapper_icon--decstop {
+        gap: 10px;
+    }
+
     .container .col:nth-child(3) button {
         z-index: 1;
+        width: 35px;
+        height: 35px;
     }
 
     .row {
@@ -122,6 +241,9 @@
     .carousel-control-next {
         right: 0;
     }
+    #carusel .carousel-control-prev {
+        display: none;
+    }
 
 }
 
@@ -134,13 +256,63 @@
         display: block;
     }
 
-    .search_btn:hover .vrapper_search--mobil {
+    #carusel img {
+        width: 152.85px;
+        height: 120.92px;
+    }
+
+    #carusel .card .card-body {
+        padding: 0 14px;
+    }
+
+    #carusel .carousel-item.active h3 {
+        color: rgb(41, 41, 45);
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+
+    .search_btn:hover+ .vrapper_search--mobil {
         display: flex;
         margin: 0;
-        right: 0;
+        right: 22px;
+    }
+
+    .carousel-indicators {
+        gap:25px;
+    }
+    #carusel .carousel-item.active .card:nth-child(4) {
+        display: none;
+    }
+
+    #carusel h2 {
+        color: rgb(0, 44, 106);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    }
+
+    .description_bloc {
+        color: rgb(0, 44, 106);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
     }
 }
 
-@media (min-width: 576px) {
-    
+@media (max-width: 576px) {
+    .blog_card {
+        width: 100%;
+    }
+
+    .blog_card:hover {
+        width: 100%;
+    }
 }
