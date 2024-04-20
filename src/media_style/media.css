@@ -275,7 +275,8 @@
     text-align: left;
     }
 
-    .search_btn:hover+ .vrapper_search--mobil {
+    .search_btn:hover+ .vrapper_search--mobil,
+    .vrapper_search--mobil:hover {
         display: flex;
         margin: 0;
         right: 22px;
