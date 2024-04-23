@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -948,40 +949,44 @@ footer {
 }
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2200px) {
 
     body {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
+        max-width: 2200px;
+        margin: 0 auto;
+    }
+
+    #container_page {
+        max-width: 2200px;
+        margin: 0 auto;
     }
 
     header {
-        max-width: 2000px;
+        max-width: 2200px;
     }
     footer {
-        max-width: 2000px;
+        max-width: 2200px;
     }
 
     .container {
-        max-width: 2000px;
+        max-width: 2200px;
     }
 
     .navbar-expand-lg .navbar-collapse {
-        max-width: 2000px;
+        max-width: 2200px;
     }
 
     #banner {
-        max-width: 2000px;
+        max-width: 2200px;
     }
 
     #carusel {
-        max-width: 2000px;
+        max-width: 2200px;
     }
 
     #blog {
-        max-width: 2000px;
+        max-width: 2200px;
+        padding-left: 172px;
     }
 }
 
